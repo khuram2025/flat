@@ -4,10 +4,12 @@ class HomePage extends StatelessWidget {
   int days = 30;
   final String name = "Khan";
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("This is test"),
+      ),
       body: Material(
         child: Center(
           child: Container(
@@ -17,6 +19,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
